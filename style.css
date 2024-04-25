@@ -1,0 +1,148 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #420303;
+   --cor-de-link: #000;
+   --cor-letras: #f0f8ff;
+   
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 10px;
+    padding: 30px;
+    line-height: 1;
+  
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link-);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+.menu__title{
+
+
+}
+
+section{
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between; /* espaço entre os componentes */
+    color: var(--cor-letras);
+    padding: 15px;
+    align-items: center;
+
+}
+section.menu{
+
+}
+
+/*Sessão Title*/
+
+section.title{
+
+}
+
+/*Sessão About*/
+
+section.about{
+
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+
+}
+
+/* experiência*/
+
+section.experience{
+
+}
+
+/*Contato*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
