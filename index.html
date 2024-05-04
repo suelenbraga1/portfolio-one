@@ -5,214 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Folha de estilo de CSS Linkado -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Fonte do Projeto Raleway -->
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONTE RALEWAY-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     
     <title>Portfólio Pessoal</title>
 </head>
+
 <body>
-    <!-- Sessão de Menu  -->
-    <div class="all">
-    <section class="menu">
-        <header>
-           <h3 class="menu__title">Meu portfólio</h3>
-        </header>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobremim">Sobre mim</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacao">Formações e Cursos</a></li>
-                <li class="menu__list__item"><a href="#xp">Experiência</a></li>
-                <li class="menu__list__item"><a href="#contato">eusuelenbraga@gmail.com</a></li>
-            </ul>
-            <li class="menu__list__item__contato"><a href="#contato">eusuelenbraga@gmail.com</a></li>
+    <!-- HEADER  -->
+
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class="fa-solid fa-bars" id="menu-icone"></i>
+
+        <nav class="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#" class="sobremim">Sobre mim</a>
+                <a href="#" class="xp">Experiências Profissionais</a>
+                <a href="#" class="projetos">Projetos</a>
+                <a href="#" class="contato">Contato</a>
         </nav>
-    </section>
+        </header>
 
-<!-- Sessão de Header/Title/Hero -->
-    <section class="title">
-        <div class="title__div">
-            <img class="title__profile" src="assets\profile.png">
-            <div class="title__container" id="#sobremim">
-                <h2 class="title__bio">Olá, meu nome é Suelen Braga e construo páginas web</h2>
-                <h3 class="title__subsection">Estou cursando Análise e Desenvolvimento de Sistemas e atualmente estou participando no projeto Oracle ONE na Alura.</h3>
-                <ul class="title__network">
-                    <!-- Ponha os links de suas redes sociais favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/suelenbraga1">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/suelenbraga-/">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Curriculo <img src="assets\arrow.png"></a></li>
-                </ul>
-            </div>
+<!-- HOME -->
+    <section class="home" id="home">
+        <div class="home-content">
+                <h3>Oi, meu nome é</h3>
+                <h1>Suelen Braga</h1> 
+                <h3>e sou <span>desenvolvedora front-end</span></h3>
+                <p>Graduanda em Análise e Desenvolvimento de Sistemas e atualmente estou participando
+                     do projeto Oracle ONE na Alura.</p>
+                
+<!-- LINKS REDES SOCIAIS -->
+         <div class="midias-sociais">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="#" class="btn">Download do meu currículo</a>
+        </div>
+
+        <div class="home-img">
+            <img src="suelen1.jpg">
         </div>
     </section>
 
-        <!-- Sessão sobre mim -->
-    <section class="about">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mim</h3>
-            <p class="about__paragraph"> Desenvolvedora web explorando novos desafios no mundo da tecnologia após 8 anos na área audiovisual de direitos autorais de música. <br>
-                 Apaixonada por programação e me especializando parar criar aplicações e resolver problemas de forma eficiente. <br>
-                Tenho conhecimentos e experiência em projetos focando em front-end com HTML, CSS, Javascript, React, Figma, Git/Github e APIs. <br>
-                Faço parte da comunidade dev completo, uma comunidade fechada onde os programadores compartilham seus conhecimentos, dúvidas e contribuem entre si para o desenvolvimento pessoal e profissional. <br>
-                Participo também da comunidade “Let’s Code!”, buscando troca de experiências e dicas sobre programação e códigos.<br>
-             </p>
+<!-- SEÇÃO SOBRE MIM -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-img">
+            <img src="img/aboutpic.png">
+        </div>
+
+        <div class="sobre-content">
+            <h2 class="cabeçalho">Sobre <span> mim </span></h2>
+            <h3>Desenvolvedora Frontend</h3>
+            <p>Desenvolvedora web Frontend explorando novos desafios no mundo da tecnologia após 8 anos na área audiovisual de direitos autorais de música. <br>
+               Apaixonada por programação e me especializando parar criar aplicações e resolver problemas de forma eficiente. <br>
+               Tenho conhecimentos e experiência em projetos focando em <strong>frontend</strong> com <strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong>, <strong>React</strong>, <strong>Figma</strong>, <strong>Git/Github</strong> e <strong>APIs</strong>. <br>
+               Faço parte da comunidade dev completo, uma comunidade fechada onde os programadores compartilham seus conhecimentos, <br>
+               dúvidas e contribuem entre si para o desenvolvimento pessoal e profissional. <br>
+               Participo também da comunidade “Let’s Code!”, buscando troca de experiências e dicas sobre programação e códigos.0</p>
+    <a href="#" class="btn">Saiba mais</a>
+        </div>
+    </section>
+ 
             <p class="about__paragraph">Profissional proativa, engajada e curiosa. Conectada com entretenimento (heavy user de redes sociais), apaixonada por gatos e ansiosa por contribuir para projetos com propósitos que tocam a vida das pessoas.</p>
-        </div>
-    </section>
+        
+<!-- SEÇÃO EXPERIÊNCIAS -->
+    <section class="experiencias" id="experiencias">
+<h2 class="cabeçalho">Minhas <span> experiências </span></h2>
 
-<!-- Sessão de Skills/Habilidades -->
-    <section class="skills">
-        <h3 class="skills__title" id="skills">Skills</h3>
-            <div class="skills__line">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> Html 5</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-        </div>
-    </section>
-
-<!-- Sessão de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-            <div class="hobbies__line">
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                        <li class="hobbies__name"> Mimar meus gatos</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                        <li class="hobbies__name">Ouvir música</li>
-                    </ul>
-                </div>
-
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                        <li class="hobbies__name">Praticar atividades físicas</li>
-                    </ul>
-                </div>
-
-            
-        </div>
-    </section>
-
-    <!-- Sessão de Histórico Acadêmico -->
-    <section class="academic">
-        <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
-                    <li class="academic__courses__item__title"><h4>Análise e Desenvolvimento de Sistemas</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2023 - em andamento</p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience">
-        <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
-        <div class="experiencie__box">
-            <h3 class="occupation">Analista de desenvolvimento de software</h3>
-            <h4 class="occupation_description">
-                Análise e desenvolvimento de novas funcionalidades para o sistema interno e APIS;<br>
-                Manutenção de automações em Python de robôs;<br>
-                Controle e condução de suporte técnico para colaboradores internos;<br>
-                Desenvolvimento front-end de sistemas e páginas web com HTML, CSS e Javascript (React).<br>
-            </h4>
-
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info">
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/suelenbraga1/codificador-de-texto-one"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://suelenbraga1.github.io/codificador-de-texto-one/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info">
-                <h2 class="experience__title">Landing Page </h2>
-                <h3 class="experience__text">CProjeto de desenvolvimento do módulo base do curso de Tecnologia da Escola DNC - Introdução a Front-end </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/suelenbraga1/projeto-landing-page"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://github.com/suelenbraga1/codificador-de-texto-one"><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <!-- Sessão de Contato -->
-        <section class="formcontato">
-            <div id="contato" class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
-                    <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sessão de Footer/Rodapé-->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desenvolvido por Suelen Braga</p>
-                <p>2024</p>
-            </div>
-        </section>
+<div class="experiencias-container">
+    <div class="experiencias-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>Analista de Desenvolvimento de Software - Agência 4P</h3>
+        <p>Análise e desenvolvimento de novas funcionalidades para o sistema interno e APIS; <br>
+            Manutenção de automações de robôs em <strong>Python</strong> e <strong>Javascript</strong>; <br>
+            Controle e condução de suporte técnico para colaboradores internos; <br>
+            Desenvolvimento front-end de sistemas e páginas web com <strong>HTML, CSS e Javascript (React)</strong>.</p>
+    <a href="#" class="btn">Saiba mais</a>
     </div>
-    <!-- Script Linkado do seu documento de JavaScript -->
-<script src="validate.js"></script>
+
+    <div class="experiencias-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>Estagiária de TI- Agência 4P</h3>
+        <p>Análise de sistema e dados; <br>
+           Suporte técnico e alterações na plataforma específica da agência, a UMOV.</p>
+    <a href="#" class="btn">Saiba mais</a>
+    </div>
+</div>
+</section>
+
+    <!-- JAVASCRIPT -->
+<script src="JS/main.js"></script>
 </body>
 </html>
