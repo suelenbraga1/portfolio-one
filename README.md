@@ -1,6 +1,5 @@
 # portfolio-one
-
-
+![Animação](https://github.com/suelenbraga1/portfolio-one/assets/140122120/2a8d116b-dbb1-4b77-901e-08fd5b42a75b)
 
 ## 🏁 Visão Geral:
 
