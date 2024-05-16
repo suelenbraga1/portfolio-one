@@ -34,7 +34,7 @@ https://docs.google.com/spreadsheets/d/1us2trJ34cwhIybDGgOic-ZuFuhPJzMwItiQo4uiY
 ## 👯 Clone este projeto:
 
 ```bash
-$ git clone https://github.com/suelenbraga1/portfolio.git
+$ git clone https://github.com/suelenbraga1/portfolio-one.git
 # Acessar
-$ cd portfolio.one
+$ cd portfolio-one
 
