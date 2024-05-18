@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{ 
-   --bg-color: #191f36;
-   --snd-bf-color: #262840;
+   --bg-color: #470e0e;
+   --snd-bf-color: #6b1414;
    --text-color: #fff;
-   --main-color: #59B2F4;
+   --main-color: #c89c7d; 
 }
 
 *{
@@ -53,9 +53,9 @@ section{
     cursor: default;    
 }
 
-.navbar a{
+.navbar a {
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: var(--text-color); 
     margin-left: 4rem;
     font-weight: 700;
 }
@@ -101,6 +101,9 @@ span{
     animation: floatImage 4s ease-in-out infinite;
 }
 
+
+/* EFEITOS NA IMAGEM */
+
 @keyframes floatImage{
     0%{
         transform: translateY(0);
@@ -111,6 +114,7 @@ span{
     100%{
         transform: translateY(0);
     }}
+
 
 .home-content p{
    font-size: 1.6rem;
@@ -127,14 +131,18 @@ span{
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3;
+    margin: 3rem 1.5rem 2rem;
     transition: .5s ease;
 }
 
-.midias-sociais a:hover{
+.midias-sociais a:hover {
     background: var(--main-color);
     color: var(--snd-bf-color);
+}
 
+.btn:hover{
+    background: var(--snd-bf-color);
+    color: var(--main-color);
 }
 
 .btn{
@@ -165,17 +173,13 @@ span{
     background: var(--snd-bf-color);
 }
 
-.about-img img{
-    width: 35vw;
-}
-
 .cabeçalho{
     text-align: center;
     font-size: 4.5rem;
 }
 
 .sobre-content h2{
-    text-align: left;
+    text-align: center;
     line-height: 1.2;
 }
 
@@ -200,16 +204,18 @@ span{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+   
 }
 
 .experiencias-container .experiencias-box{
-    flex: 1 1 30rem;
+    flex: 1 1 1;
     background: var(--snd-bf-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+  
 }
 
 .experiencias-container .experiencias-box:hover{
@@ -217,51 +223,324 @@ span{
     transform: scale(1.02);
 }
 
-.services-box i{
+.experiencias-box i{
     font-size: 7rem;
     color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.experiencias-box h3{
+    font-size: 2.6rem;
+}
+
+.experiencias-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+
+/* SEÇÃO PROJETOS */
+
+.sec-projetos{
+    background: var(--snd-bf-color);
+  
+}
+
+.sec-projetos h2{
+    margin-bottom: 4rem;
+}
+
+.projetos-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos-layer{
+    width: 500px;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    height: 600px;
+    
+}
+
+.projetos-layer-paragrafo{
+    height: 190px;
+}
+
+.projetos-container .projetos-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 3rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    align-items: center;
+ 
+    
+}
+
+.projetos-layer img{
+    max-width: 100%;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.8;
+    display: block;
+
 
 }
+
+.projetos-box:hover img{
+    transform: scale(1.1);
+}
+
+.projetos-box:hover .projetos-layer{
+    transform: translateY(0);
+}
+
+.projetos-layer h4{
+    font-size: 2rem;
+    height: 60px;
+   
+}
+
+.projetos-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.projetos-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    background: var(--main-color);
+    border-radius: 2rem;
+    
+}
+
+.projetos-layer a:hover{
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+/* SEÇÃO CONTATO */
+
+.contato h2{
+    margin-bottom: 3rem;
+}
+
+.contato form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contato form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contato form .input-box input,
+.contato form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--snd-bf-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contato form .input-box input{
+    width: 49%;
+}
+
+.contato form textarea{
+    resize: none;
+}
+
+.contato form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--snd-bf-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.footer-iconTop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem;
+    color: var(--snd-bf-color);
+    padding: 0.5rem;
+}
+
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
-/*Tablet*/
-@media (min-width: 768px) {
 
-/* Menu */
+/************ TABLET *********/
 
-/*title*/
 
-/*Skills*/
+@media (max-width: 768px) {
 
-/*Hobbies*/
+/* MENU */
 
-/*Experiências acadêmicas*/
+#menu-icone{
+    display: block;
+}
 
-/*Expeirência profissional*/
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 5.rem 1rem rgba(0, 0, 0, .2);
+    display: none;
+}
+
+.navbar.active{
+    display: block;
+}
+
+.navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+/* SEÇÃO HOME */
+
+.home{
+    flex-direction: column;
+}
+
+.home-content h3{
+    font-size: 2.6rem;
+}
+
+.home-content h1{
+    font-size: 5rem;
+}
+
+.home-content{
+    order: 2;
+}
+
+.home-img img{
+    width: 70vw;
+    margin-top: 4rem;
+}
+
+/* SEÇÃO SOBRE MIM */
+
+.sobre{
+    flex-direction: column;
+}
+
+.sobre-img img{
+    width: 90vw;
+    margin-top: 4rem;
+}
+
+/* SEÇÃO EXPERIÊNCIAS */
+
+.experiencias h2{
+    margin-bottom: 3rem;
+}
+
+/* SEÇÃO PROJETOS */
+
+.projetos h2{
+    margin-bottom: 3rem;
+}
+
+.projetos-container{
+    display: block;
+    margin: 0 auto;
+}
+
+.projetos-layer{
+    max-width: 100%;
+    width: 100%;
+}
+
+.projetos-layer-paragrafo{
+    height: 100px;
+
+}
+}
+
+
+
+/********** MOBILE **********/
+
+
+@media (max-width: 425px) {
+
+/* MENU */
+
+html{
+    font-size: 50%;
+} 
+
+.contato form .input-box input{
+    width: 100%;
+}
+
+.projetos-layer{
+    height: 350px;
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sessão sobre*/
-
-/*Skills*/
-
-/*Hobbies*/
- 
-/*Formação Acadêmica*/
-
-/*Experiência Profissional*/
-
- /*Contato*/
-
-/*Footer*/
-
+.projetos-layer-paragrafo{
+    height: 80px;
 }
+.projetos-layer h4{
+    height: 25px;
+}
+}
+
+

@@ -13,31 +13,6 @@ menuIcone.onclick = () => {
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAtrribute('id');
-
-        if(top >= offset && top < offset + height){
-            navLinks.forEach.apply(links =>{
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
-        };
-    });
-
-/* STICKY NAVBAR */
-
-let header = document.querySelector('header');
-header.classList.toggle('scticky', window.scrollY > 100);
-
-/* REMOVER ICONE TOGGLE E NAVBAR */
-
-menuIcone.classList.remove('fa-xmark');
-navbar.classList.remove('active');
-};
 
 /* SCROLL REVEAL */
 
@@ -48,7 +23,7 @@ ScrollReveal({
  });
 
 ScrollReveal().reveal('.home-content, cabeçalho', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .experiencias-container, .portfolio-box, contato form', { origin: 'buttom' });
+ScrollReveal().reveal('.home-img, .experiencias-container, .projetos-box, contato form', { origin: 'buttom' });
 ScrollReveal().reveal('.home-contato h1, .sobre-img', { origin: 'left'});
 ScrollReveal().reveal('.home-contato p, .sobre-content', { origin: 'right'});
 
@@ -61,3 +36,28 @@ const type = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+
+/* MAIN */
+
+document.querySelectorAll('a[href^="#"').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    })
+})
+
+const projetosLayerParagrafo = document.querySelectorAll(".projetos-layer-paragrafo"); 
+
+
+function formatText() {
+    projetosLayerParagrafo.forEach((Element) => {
+        const text = Element.textContent
+       if (text.length > 105){
+        Element.innerText = text.slice(0, 103) + "..."
+       }
+         }) 
+}; 
+formatText();
